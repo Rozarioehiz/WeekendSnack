@@ -13,7 +13,13 @@ public class FunctionTest {
         boolean expected = true;
         boolean actual = array.isEven(number);
         assertEquals(true, actual);
-
-
+    }
+    @Test
+    public void testItsOdd(){
+        Function array = new Function();
+        int [] numbers = {1,2,3,4,5,6,7,8,9};
+//        boolean expected = true;
+        boolean actual = array.oddNumbers(numbers);
+        assertEquals(true, actual);
     }
 }
