@@ -38,4 +38,21 @@ public class Function {
             return false;
         }
     }
+
+    public boolean subtractNumber(int numberOne, int numberTwo) {
+        if(numberOne > numberTwo){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean itsSquare(int [] number) {
+        int result = 0;
+        for(int count = 0; count < number.length; count++ ){
+            result += number[count];
+
+        }
+        return true;
+    }
+
 }

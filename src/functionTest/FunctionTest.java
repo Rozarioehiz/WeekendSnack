@@ -30,4 +30,19 @@ public class FunctionTest {
         boolean actual = array.itPalindrome(numbers);
         assertEquals(expected, actual);
     }
+    @Test
+    public void testForsubtraction(){
+        Function array = new Function();
+
+        boolean actual = array.subtractNumber(7,3);
+        assertEquals(true, actual);
+
+    }
+    @Test
+    public void testSquareOfNumbers(){
+        Function array = new Function();
+        int [] number = {4};
+        boolean actual = array.itsSquare(number);
+        assertEquals(true, actual);
+    }
 }
