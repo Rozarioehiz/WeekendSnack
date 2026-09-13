@@ -23,4 +23,19 @@ public class Function {
         }
         return false;
     }
+    public boolean itPalindrome(int[] numbers) {
+        String targetNumber = "";
+        String indexNumber = "";
+        for (int count = 0; count < numbers.length; count++) {
+            targetNumber += numbers[count];
+        }
+        for (int index = numbers.length - 1; index >= 0; index--) {
+            indexNumber += numbers[index];
+        }
+        if (targetNumber.equals(indexNumber)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class FunctionTest {
     @Test
-    public void testThatitIsEven(){
+    public void testItsEven(){
         Function array = new Function();
         int [] number = {1,2,3,4,5,6,7,8,9};
         boolean expected = true;
@@ -21,5 +21,13 @@ public class FunctionTest {
 //        boolean expected = true;
         boolean actual = array.oddNumbers(numbers);
         assertEquals(true, actual);
+    }
+    @Test
+    public void testThatItPalindrome(){
+        Function array = new Function();
+        int [] numbers = {1,2,5,2,1};;
+       boolean expected = true;
+        boolean actual = array.itPalindrome(numbers);
+        assertEquals(expected, actual);
     }
 }
